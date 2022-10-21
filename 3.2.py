@@ -6,8 +6,9 @@ while True:                                        #Проверка на дур
         break
     except ValueError:
          print('Вы должны ввести числа! Попробуйте снова!')
-lst = [random.randint(0, 1000) for i in range(count)]
-lst1 = [random.randint(0, 1000) for i in range(count1)]
-print('Массив1:', lst)
-print('Массив2:',lst1)
-print('Общие элементы',set(lst) & set (lst1))
+
+lst = [random.uniform(0, 1000) for i in range(count)]
+lst1 = [random.uniform(0, 1000) for i in range(count1)]
+print(lst)
+print(lst1)
+print(set(lst) & set (lst1))
